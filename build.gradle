@@ -2,10 +2,11 @@ plugins {
 	id 'org.springframework.boot' version '2.3.3.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.10.RELEASE'
 	id 'java'
+	id 'com.palantir.git-version' version '0.12.3' //versioning plugin
 }
 
 group = 'com.mevinod'
-version = '0.0.1-SNAPSHOT'
+version gitVersion() //gitVersioning
 sourceCompatibility = '1.8'
 
 repositories {
